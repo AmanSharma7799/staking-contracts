@@ -1,66 +1,24 @@
-## Foundry
+# 🧱 Foundry Staking Smart Contract
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+This project implements a simple staking system using [Foundry](https://book.getfoundry.sh/) and Solidity. Users can stake an ERC-20 token and earn rewards over time in a separate reward token.
 
-Foundry consists of:
+---
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## 🚀 Features
 
-## Documentation
+✅ **Stake Tokens**  
+Stake any ERC-20 token and start earning rewards.
 
-https://book.getfoundry.sh/
+✅ **Unstake Anytime**  
+Withdraw your staked tokens at any moment.
 
-## Usage
+✅ **Earn Rewards**  
+Rewards accumulate automatically while tokens are staked.
 
-### Build
+✅ **Mock Tokens for Testing**  
+Includes mock ERC20 staking and reward tokens for local testing and frontend integration.
 
-```shell
-$ forge build
-```
+✅ **Chain Agnostic Deployment**  
+Deploy locally (Anvil/Hardhat) or on Sepolia testnet using `forge script`.
 
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+---
